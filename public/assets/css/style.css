@@ -1,0 +1,100 @@
+html{
+    height:100%;
+    width:100%;
+    -webkit-overflow-scrolling: none
+}
+body{
+    background-color: black;
+    height:100%;
+    width:100%
+}
+#carouselExampleSlidesOnly{
+    width: 100%;
+    height:100%
+}
+.btn {
+    background-color: #61b35b;
+    font-family: 'Bangers', cursive;
+}
+.btn:hover{
+    background-color: #b35b61;
+    font-size: 22px;
+}
+.btn:active {
+    background-color: #61b35b;
+    color:#fff
+}
+.btn:focus {
+    border:none;
+}
+h1, h5, p{
+    color: #848eb0;
+    -webkit-text-stroke: 5px, #ffffff;
+}
+li {
+    list-style-type: none;
+}
+.carosuel-item {
+    width:1224px;
+    height:564;
+}
+.timer {
+    color: white;
+    border: 4px solid;
+    font-family: "Press Start 2P";
+    margin: 0 auto;
+    border-radius: 12px;
+    width: 10%;
+}
+.jumbotron {
+    background: transparent !important
+}
+.number-input {
+    height: 20px;
+    width:50px
+}
+#progress-page {
+    padding-top: 50px;
+}
+.border{
+    border:2px solid;
+    padding-top: 15px;
+}
+.userStats {
+    color:#fff;
+    font-family: 'Press Start 2P', cursive;
+}
+.navbar-brand {
+    font-family: 'Orbitron', sans-serif; 
+    margin: 0 auto;
+}
+.navbar-collapse {
+    position: absolute;
+    top: 10px;
+}
+.gameImage {
+    background-color:black;
+    height:100%;
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#game-image, #winning-image, #losing-image {
+    height: 100%;
+    width:60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 767px) {
+.navbar-brand {
+    text-align: center;
+}
+.navbar-toggler {
+    position: absolute;
+    top: 10px;
+}
+.navbar-collapse {
+    position: inherit;
+}
+}

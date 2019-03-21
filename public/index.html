@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- css/bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Javascript/BootStrap Scripts -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- moment.js -->
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Orbitron|Press+Start+2P" rel="stylesheet">
+</head>
+<nav class="navbar navbar-dark bg-dark nav-justify-content-center">
+    <span class="navbar-brand h1">The New Jersey Trail</span>
+</nav>
+<!-- Start Menu -->
+<div id="welcome-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 py-5">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/assets/images/NJCaro.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/NJCaro3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/NJCaro4.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container align-center fixed-bottom py-5">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>A modern version of the classic game; The Oregon Trail.</p>
+                    <button type="button" class="btn btn-lg" id="start-button">Start Game</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- ================================================================================= -->
+<!-- Information about Game -->
+<div id="info-page">
+    <div class="container vertical-center-row py-3">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12 text-center py-5">
+                    <h1>Your Journey</h1>
+                </div>
+                <div class="col-md-12 float-left"><br>
+                    <h5>You are about to embark on an epic journey through the state of New Jersey!</h5> <br>
+                    <p>
+                        It has been over a year since you have been planning to attend your friends wedding. As the sun
+                        rises on the big day, your alarm remains silent. Hours later you awake to find that you have
+                        overselpt and are now in a race against the clock to arrive on time to the ceremony down at the
+                        bottom of the state in Cape May.
+                        <br>
+                        Your Journey Begins in Ramsey NJ, the clock is ticking so get going!
+                        <br>
+                        Good Luck!
+                    </p>
+                    <div class="namePlaceHolder1">
+                        <input id="inputName" type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="buttonHolder text-center">
+                        <button type="button" class="btn btn-lg" id="startGame-button">Begin
+                            Journey</button>
+                    </div>
+                    <!-- <button type="button" class="btn btn-lg" id="store-button">Continue</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- ================================================================================= -->
+<!-- STORE FRONT -->
+<div id="storeFront">
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Welcome to the store</h2>
+                    <h5>Purchase the items you think will be necessary for your journey.</h5>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="float-right">
+                        <li>Gas</li>
+                        <li>Food</li>
+                        <li>Water</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li><input type="number" class="number-input"></li>
+                        <li><input type="number" class="number-input"></li>
+                        <li><input type="number" class="number-input"></li>
+                        <li><input type="number" class="number-input"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="buttonHolder text-center">
+                <button type="button" class="btn btn-lg" id="startGame-button">Begin Journey</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ================================================================================= -->
+<!-- Events Page -->
+<div class="container align-center" id="randomEvent">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-12 align-center">
+                <div id="img-div"></div>
+                <div id="event"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ================================================================================= -->
+<!-- Gameplay -->
+<div id="gamePlay">
+    <div class="text-center userStats">Time left until you're late</div>
+    <div class="timer text-center">00:00</div>
+    <div class="container">
+        <div class="gameImage"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h5 class="userStats">Trip Status/user statistics</h5>
+            <div class="distanceLeft userStats">
+                <h6>Distance Here</h6>
+            </div> 
+            <div class="eventTrigger userStats">  
+                <h6>Distance to Next Location</h6>
+            </div> 
+        </div>
+        <div class="container border">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="userStats float-right">
+                        <ul>
+                            <li>Gas:</li>
+                            <li>Food:</li>
+                            <li>Water:</li>
+                            <li>Spare Tires:</li>
+                            <li>Remaining Cash:</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="userStats float-left">
+                        <ul>
+                            <li id="gas-remaining">remaining</li>
+                            <li id="food-remaining">remaining</li>
+                            <li id="water-remaining">remaining</li>
+                            <li id="tires-remaining">remaining</li>
+                            <li id="cash-remaining">remaining</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="eventsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="display: none" id="response">
+          <h5 class="modal-title" id="modalTitle"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modalText">
+        </div>
+        <div class="modal-footer" id="modalBtnDiv">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+<script type="text/javascript" src="assets/javascript/inventory.js"></script>
+<script type="text/javascript" src="assets/javascript/locations.js"></script>
+
+</body>
+</html>
