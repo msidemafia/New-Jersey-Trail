@@ -5,6 +5,8 @@ Embark on your adventure across our beautiful state as you rush to South Jersey 
 
 ![Background](https://github.com/EMalley/NewJerseyTrail/blob/master/public/assets/images/BackgroundNJTrail.png)
 
+[Play the game!](https://fathomless-refuge-69498.herokuapp.com/)
+
 Version 1.0
 
 Authors: 
